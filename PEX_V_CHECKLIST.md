@@ -31,26 +31,26 @@
 - [x] Re-renderizar lista após remoção
 
 ### RF03 – Importar participantes via CSV
-- [ ] Adicionar input do tipo `file` aceitando `.csv`
-- [ ] Implementar função de leitura e parsing do CSV
-- [ ] Ignorar linhas em branco e duplicatas durante a importação
-- [ ] Feedback ao usuário sobre quantos participantes foram importados
-- [ ] Salvar participantes importados no LocalStorage
+- [x] Adicionar input do tipo `file` aceitando `.csv`
+- [x] Implementar função de leitura e parsing do CSV
+- [x] Ignorar linhas em branco e duplicatas durante a importação
+- [x] Feedback ao usuário sobre quantos participantes foram importados
+- [x] Salvar participantes importados no LocalStorage
 
 ### RF04 – Realizar sorteio aleatório sem repetição
 - [x] Algoritmo de sorteio aleatório implementado em `sorteio.js`
-- [ ] Suporte a sorteio de **múltiplas vagas** (ex.: sortear N ganhadores sem repetição)
-- [ ] Garantir que um mesmo participante não seja sorteado duas vezes no mesmo sorteio
+- [x] Suporte a sorteio de **múltiplas vagas** (ex.: sortear N ganhadores sem repetição)
+- [x] Garantir que um mesmo participante não seja sorteado duas vezes no mesmo sorteio
 
 ### RF05 – Exibir resultado imediatamente na interface
 - [x] Exibir nome do vencedor na tela após o sorteio
-- [ ] Exibir lista completa dos sorteados quando houver múltiplas vagas
-- [ ] Destacar visualmente o(s) vencedor(es) (animação ou estilo diferenciado)
+- [x] Exibir lista completa dos sorteados quando houver múltiplas vagas
+- [x] Destacar visualmente o(s) vencedor(es) (animação ou estilo diferenciado)
 
 ### RF06 – Exportar resultado em formato texto
-- [ ] Botão "Exportar Resultado"
-- [ ] Gerar arquivo `.txt` com os nomes dos sorteados e data/hora do sorteio
-- [ ] Permitir download do arquivo diretamente pelo navegador
+- [x] Botão "Exportar Resultado"
+- [x] Gerar arquivo `.txt` com os nomes dos sorteados e data/hora do sorteio
+- [x] Permitir download do arquivo diretamente pelo navegador
 
 ---
 
@@ -58,9 +58,9 @@
 
 ### Interface responsiva e intuitiva
 - [x] Layout base com cards e espaçamento adequado
-- [ ] Tornar layout totalmente responsivo (mobile-first / media queries)
-- [ ] Melhorar feedback visual para ações (cores, ícones, mensagens de sucesso/erro)
-- [ ] Adicionar contagem de participantes cadastrados na interface
+- [x] Tornar layout totalmente responsivo (mobile-first / media queries)
+- [x] Melhorar feedback visual para ações (cores, ícones, mensagens de sucesso/erro)
+- [x] Adicionar contagem de participantes cadastrados na interface
 
 ### Tempo de resposta inferior a 2 segundos
 - [x] Operações realizadas localmente (sem rede), dentro do limite esperado
@@ -90,20 +90,20 @@
 ## 🎨 Interface e UX
 
 - [x] Estrutura base com seções: Cadastro, Lista e Sorteio
-- [ ] Número de vagas configurável pelo usuário antes do sorteio
-- [ ] Mensagem de confirmação antes de limpar toda a lista
-- [ ] Botão "Limpar lista" para remover todos os participantes de uma vez
-- [ ] Exibir data de cadastro de cada participante na lista
-- [ ] Estilização aprimorada (paleta de cores, hover nos botões, transições)
+- [x] Número de vagas configurável pelo usuário antes do sorteio
+- [x] Mensagem de confirmação antes de limpar toda a lista
+- [x] Botão "Limpar lista" para remover todos os participantes de uma vez
+- [x] Exibir data de cadastro de cada participante na lista
+- [x] Estilização aprimorada (paleta de cores, hover nos botões, transições)
 
 ---
 
 ## 📄 Documentação e Entrega (PEX V)
 
 - [x] PEX IV entregue com definição de arquitetura e modelagem de dados
-- [ ] Implementar todas as funcionalidades pendentes listadas acima
+- [x] Implementar todas as funcionalidades pendentes listadas acima
 - [ ] Realizar testes funcionais manuais com casos de uso reais
-- [ ] Documentar instruções de uso (README.md)
+- [x] Documentar instruções de uso (README.md)
 - [ ] Preparar demonstração da aplicação para a empresa parceira
 - [ ] Redigir relatório final da PEX V com evidências de funcionamento
 
@@ -116,11 +116,11 @@
 | Estrutura do Projeto | 7 | 7 | 0 |
 | RF01 – Cadastro manual | 5 | 5 | 0 |
 | RF02 – Remoção | 3 | 3 | 0 |
-| RF03 – Importação CSV | 5 | 0 | 5 |
-| RF04 – Sorteio | 4 | 2 | 2 |
-| RF05 – Exibir resultado | 3 | 1 | 2 |
-| RF06 – Exportar resultado | 3 | 0 | 3 |
-| Req. Não Funcionais | 8 | 4 | 4 |
-| Interface / UX | 7 | 2 | 5 |
-| Documentação/Entrega | 6 | 1 | 5 |
-| **Total** | **51** | **25** | **26** |
+| RF03 – Importação CSV | 5 | 5 | 0 |
+| RF04 – Sorteio múltiplas vagas | 4 | 4 | 0 |
+| RF05 – Exibir resultado | 3 | 3 | 0 |
+| RF06 – Exportar resultado | 3 | 3 | 0 |
+| Req. Não Funcionais | 8 | 6 | 2 |
+| Interface / UX | 7 | 7 | 0 |
+| Documentação/Entrega | 6 | 3 | 3 |
+| **Total** | **51** | **46** | **5** |
