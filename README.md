@@ -16,12 +16,13 @@ Este aplicativo resolve esses problemas ao automatizar todo o processo de sortei
 
 - ✅ Cadastro manual de participantes
 - ✅ Remoção individual de participantes
-- ✅ Validação de nomes duplicados
-- ✅ Sorteio aleatório sem repetição
-- ✅ Persistência de dados via LocalStorage
-- 🔄 Importação de participantes via arquivo CSV *(em desenvolvimento)*
-- 🔄 Sorteio de múltiplas vagas *(em desenvolvimento)*
-- 🔄 Exportação do resultado em `.txt` *(em desenvolvimento)*
+- ✅ Validação de nomes duplicados (case-insensitive)
+- ✅ Sorteio aleatório de **múltiplas vagas** sem repetição
+- ✅ Persistência de dados via LocalStorage (Participantes e Último Sorteio)
+- ✅ Importação de participantes em lote via arquivo **CSV**
+- ✅ Exportação do resultado em arquivo **.txt** para auditoria
+- ✅ Interface 100% responsiva (Mobile First) com animações de resultado
+- ✅ Confirmação de segurança para limpeza total da lista
 
 ---
 
@@ -87,10 +88,10 @@ Cada participante é armazenado no seguinte formato JSON:
 |---|---|---|
 | RF01 | Cadastrar participante manualmente | ✅ Concluído |
 | RF02 | Remover participante | ✅ Concluído |
-| RF03 | Importar participantes via CSV | 🔄 Em desenvolvimento |
+| RF03 | Importar participantes via CSV | ✅ Concluído |
 | RF04 | Realizar sorteio aleatório sem repetição | ✅ Concluído |
 | RF05 | Exibir resultado imediatamente na interface | ✅ Concluído |
-| RF06 | Exportar resultado em formato texto | 🔄 Em desenvolvimento |
+| RF06 | Exportar resultado em formato texto | ✅ Concluído |
 
 ---
 
