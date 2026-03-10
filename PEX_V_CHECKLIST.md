@@ -104,7 +104,7 @@
 - [ ] Implementar todas as funcionalidades pendentes listadas acima
 - [ ] Realizar testes funcionais manuais com casos de uso reais
 - [ ] Documentar instruções de uso (README.md)
-- [ ] Preparar demonstração da aplicação para a empresa parceira (V Soluções Informática LTDA)
+- [ ] Preparar demonstração da aplicação para a empresa parceira
 - [ ] Redigir relatório final da PEX V com evidências de funcionamento
 
 ---
