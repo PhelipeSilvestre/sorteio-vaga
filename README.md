@@ -1,12 +1,12 @@
 # 🎯 Sorteio de Vagas
 
-Aplicação web para automatização de sorteios de vagas, desenvolvida como Projeto de Extensão (PEX V) do curso de Análise e Desenvolvimento de Sistemas da UniAmérica Descomplica, em parceria com a empresa **V Soluções Informática LTDA**.
+Aplicação web para automatização de sorteios de vagas, desenvolvida como Projeto de Extensão (PEX V) do curso de Análise e Desenvolvimento de Sistemas da UniAmérica Descomplica.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-A **V Soluções Informática LTDA** realizava sorteios de vagas de forma manual, utilizando planilhas eletrônicas. Esse processo apresentava problemas como falta de transparência, lentidão e risco de erros operacionais.
+A A empresa solicitante realizava sorteios de vagas de forma manual, utilizando planilhas eletrônicas. Esse processo apresentava problemas como falta de transparência, lentidão e risco de erros operacionais.
 
 Este aplicativo resolve esses problemas ao automatizar todo o processo de sorteio diretamente no navegador, sem necessidade de servidor ou infraestrutura adicional.
 
@@ -103,7 +103,6 @@ Cada participante é armazenado no seguinte formato JSON:
 | Curso | Análise e Desenvolvimento de Sistemas |
 | Instituição | UniAmérica Descomplica |
 | Semestre | 2026 |
-| Empresa Parceira | V Soluções Informática LTDA |
 
 ---
 

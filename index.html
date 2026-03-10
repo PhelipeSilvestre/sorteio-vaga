@@ -8,24 +8,74 @@
 </head>
 <body>
 
+    <header class="app-header">
+        <h1>🎯 Sorteio de Vagas</h1>
+        <p class="app-subtitle">Soluções Informática LTDA</p>
+    </header>
+
     <div class="container">
-        <h1>Sorteio de Vagas</h1>
 
+        <!-- RF01 – Cadastro manual -->
         <div class="card">
-            <h2>Cadastrar Participante</h2>
-            <input type="text" id="nomeInput" placeholder="Nome do participante">
-            <button id="addBtn">Adicionar</button>
+            <h2>👤 Cadastrar Participante</h2>
+            <div class="input-row">
+                <input type="text" id="nomeInput" placeholder="Nome do participante" autocomplete="off">
+                <button id="addBtn" class="btn btn-primary">Adicionar</button>
+            </div>
+            <div id="feedbackCadastro" class="feedback"></div>
         </div>
 
+        <!-- RF03 – Importação via CSV -->
         <div class="card">
-            <h2>Lista de Participantes</h2>
+            <h2>📂 Importar via CSV</h2>
+            <p class="card-hint">O arquivo deve conter um nome por linha.</p>
+            <div class="input-row">
+                <label class="btn btn-secondary" for="csvInput">Escolher arquivo .csv</label>
+                <input type="file" id="csvInput" accept=".csv" hidden>
+                <span id="csvFileName" class="file-name">Nenhum arquivo selecionado</span>
+            </div>
+            <div id="feedbackCSV" class="feedback"></div>
+        </div>
+
+        <!-- RF02 – Lista de participantes -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Participantes <span id="contagem" class="badge">0</span></h2>
+                <button id="limparListaBtn" class="btn btn-danger btn-sm">Limpar tudo</button>
+            </div>
             <ul id="listaParticipantes"></ul>
+            <p id="listaVazia" class="lista-vazia">Nenhum participante cadastrado.</p>
         </div>
 
+        <!-- RF04 + RF05 + RF06 – Sorteio -->
         <div class="card">
-            <h2>Sorteio</h2>
-            <button id="sortearBtn">Sortear</button>
-            <p id="resultado"></p>
+            <h2>🎲 Realizar Sorteio</h2>
+            <div class="input-row">
+                <label for="numVagas">Número de vagas:</label>
+                <input type="number" id="numVagas" value="1" min="1" max="999" class="input-vagas">
+                <button id="sortearBtn" class="btn btn-success">Sortear</button>
+            </div>
+
+            <div id="resultadoContainer" class="resultado-container hidden">
+                <h3>🏆 Resultado do Sorteio</h3>
+                <p id="resultadoInfo" class="resultado-info"></p>
+                <ul id="listaResultado" class="lista-resultado"></ul>
+                <button id="exportarBtn" class="btn btn-secondary">⬇️ Exportar resultado (.txt)</button>
+            </div>
+
+            <p id="resultadoErro" class="feedback feedback-erro"></p>
+        </div>
+
+    </div>
+
+    <!-- Modal de confirmação -->
+    <div id="modalConfirmacao" class="modal-overlay hidden">
+        <div class="modal">
+            <p>Tem certeza que deseja remover todos os participantes?</p>
+            <div class="modal-actions">
+                <button id="modalConfirmarBtn" class="btn btn-danger">Sim, limpar</button>
+                <button id="modalCancelarBtn" class="btn btn-secondary">Cancelar</button>
+            </div>
         </div>
     </div>
 
